@@ -182,22 +182,22 @@ if(isset($_GET["delete_id"])){
 				<form action="" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="">Student Name</label>
-						<input name="name" class="form-control" type="text">
+						<input name="name" value="<?php old("name");?>" class="form-control" type="text">
 					</div>
 
 					<div class="form-group">
 						<label for="">Email</label>
-						<input name="email" class="form-control" type="text">
+						<input name="email" value="<?php old("email");?>" class="form-control" type="text">
 					</div>
 
 					<div class="form-group">
 						<label for="">Cell</label>
-						<input name="cell" class="form-control" type="text">
+						<input name="cell" value="<?php old("cell");?>" class="form-control" type="text">
 					</div>
 
 					<div class="form-group">
 						<label for="">username</label>
-						<input name="username" class="form-control" type="text">
+						<input name="username" value="<?php old("username");?>" class="form-control" type="text">
 					</div>
 
 					<div class="form-group">
@@ -215,7 +215,7 @@ if(isset($_GET["delete_id"])){
 
 					<div class="form-group">
 						<label for="">Age</label>
-						<input  name="age" class="form-control" type="text">
+						<input  name="age" value="<?php old("age");?>" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Gender</label><br>
